@@ -5,14 +5,14 @@
 a = 0
 b = 0
 c = 1
-n = 0
-while (c > 0) or (c < 0):
+while c != 0:
     c = int(input())
-    while n < c:
+    n = 0
+    while 2**n < (c + 1):
         if c == 2**n:
             a = a+c
             b += 1
-    n += 1
+        n += 1
 if (b == 0):
     print ("Нет")
 else:
